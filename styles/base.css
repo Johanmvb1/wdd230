@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Permanent Marker';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/permanentmarker/v16/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Cfw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  body {
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(49, 55, 66);
+}
+header, main, footer {
+    max-width: 600px;
+    margin: auto;
+}
+header{
+    background-color: rgb(4, 211, 211);
+    padding: .25rem;
+}
+h1 {
+    color: black;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    text-indent: 20px;
+}
+h2 {
+    color: whitesmoke;
+    font-size: 16px;
+    margin-left: 25px;
+}
+img{
+    width: 125px;
+    height:185px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+ul {
+    text-indent: 20px;
+    color: whitesmoke;
+    background-color: rgb(80, 91, 110);
+    padding: .25rem;
+}
+li{
+    padding-bottom: .5rem;
+}
+a{
+    color: 	rgb(1, 255, 35);
+    padding: .25rem;
+}
+.weblink{
+    color: black;
+}
+footer{
+    font-size: 12px;
+    background-color: rgb(4, 211, 211);
+    text-align: center;
+    padding: .01rem;
+}
+
+@media only screen and (min-width: 32.5em){
+    body{
+        font-size: 16px;
+    }
+    header{
+        border-radius: 10px; 
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    footer{
+        font-size: 16px;
+        border-radius: 10px; 
+    }
+    img{
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+        float: right;
+        margin-top: 15px;
+        margin-right: 50px;
+    }
+    ul {
+        text-indent: 50px;
+        border-top-right-radius:30px;
+        border-bottom-left-radius: 30px;
+    }
+    a{
+        padding: .75rem;
+    }
+}
