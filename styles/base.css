@@ -7,88 +7,49 @@
   }
   
   body {
-    font-size: 12px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(49, 55, 66);
+    margin: .5rem;
+    padding: .5rem;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-size: 16px;
 }
-header, main, footer {
-    max-width: 600px;
-    margin: auto;
+
+.myPicture.jgp {
+    position: absolute;
+    right: 5%;
+    box-shadow: 3px 5px 32px 8px rgba(0,0,0,0.36);
 }
 header{
-    background-color: rgb(4, 211, 211);
-    padding: .25rem;
+    display: flex;
+    background-color: #455398;
+    color: #ffffff;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 1rem;
 }
-h1 {
-    color: black;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 20px;
-    text-indent: 20px;
+main{
+    padding: 1rem;
 }
+
 h2 {
-    color: whitesmoke;
-    font-size: 16px;
-    margin-left: 25px;
+    background-color: 455398;
+    color: black;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
 }
-img{
-    width: 125px;
-    height:185px;
-    border-top-right-radius: 40px;
-    border-bottom-left-radius: 40px;
-}
-ul {
-    text-indent: 20px;
-    color: whitesmoke;
-    background-color: rgb(80, 91, 110);
-    padding: .25rem;
-}
-li{
-    padding-bottom: .5rem;
-}
+
 a{
-    color: 	rgb(1, 255, 35);
+    color: 	#455398;
     padding: .25rem;
 }
 .weblink{
-    color: black;
+    color: rgb(255, 255, 255);
 }
 footer{
     font-size: 12px;
-    background-color: rgb(4, 211, 211);
+    background-color: #455398;
     text-align: center;
     padding: .01rem;
-}
-
-@media only screen and (min-width: 32.5em){
-    body{
-        font-size: 16px;
-    }
-    header{
-        border-radius: 10px; 
-    }
-    h1 {
-        font-size: 30px;
-    }
-    h2 {
-        font-size: 20px;
-    }
-    footer{
-        font-size: 16px;
-        border-radius: 10px; 
-    }
-    img{
-        border-top-right-radius: 40px;
-        border-bottom-left-radius: 40px;
-        float: right;
-        margin-top: 15px;
-        margin-right: 50px;
-    }
-    ul {
-        text-indent: 50px;
-        border-top-right-radius:30px;
-        border-bottom-left-radius: 30px;
-    }
-    a{
-        padding: .75rem;
-    }
 }
