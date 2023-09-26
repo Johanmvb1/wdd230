@@ -3,18 +3,43 @@ body{
 }
 
 header{
-    height: 400px;
-    grid-column-start: 1;
+    padding: 10px;
     grid-column-end: 2;
     text-align: center;
-    color: #260537;
     background-color: #FAF9F6;
-    font-family: sans-serif;
-    padding: 60px;
-    
+    font-family: sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    font-size: 32px;
 }
 
+header h1{
+    margin: auto;
+}
+header p {
 
+    margin: auto;
+
+}
+
+section {
+    background-color: #FAF9F6;
+    display: block;
+    font-family: sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    align-items: center;
+    margin: 25px;
+}
+
+section h1 {
+    font-size: 30px;
+}
+
+section h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+section h3{
+    font-size: 23px;
+}
 nav{
     float: right;
     color: #260537;
@@ -71,31 +96,10 @@ main{
     border: 5px #260537;
 }
 
-section a {
-    color: #373205;
-    text-decoration: none;
-}
-
-section ul {
-    margin: 0;
-    padding: 0;
-}
-
-section ul a:hover{
-    color: red;
-}
-
-section li {
-    list-style-type: none;
-    font-size: 20px;
-    margin: 5px;
-}
-
-section a:hover {
-    color: #260537;
-}
-
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
     height: 50px;
     grid-column-start: 1;
     grid-column-end: 1;
