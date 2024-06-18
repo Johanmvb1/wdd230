@@ -1,0 +1,10 @@
+:root {
+    --main-color: #007bff;
+    --font-family: 'Roboto', sans-serif;
+}
+
+/* Apply the color schema and typography */
+body {
+    background-color: var(--main-color);
+    font-family: var(--font-family);
+}
