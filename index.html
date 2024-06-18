@@ -1,58 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Johan Villarreal">
-    <title>Johan Villarreal - WDD 230 - Web Fronted Development</title>
-    <meta name="description" content="This is Johan Villareal Course assignment portal for the class WDD 230 - Web Fronted Development">
-    <link rel="shortcut icon" href="https://snowmoto.github.io/favicon.ico">
-    <!--<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta property="og:url" content="https://github.com/Johanmvb1/wdd230..git" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Johan Villarreal - WDD 230 - WEB Fronted Development " />
+    <meta property="og:description"
+        content="WDD230 - Web Fronted Development - Johan Villarreal - https://byui-cse.github.io/wdd230-ww-course/week01/w01-team-activity.html" />
+    <meta property="og:image:type" content="images/mypicture.png" />
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="icon" href="favicon.ico">
-
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <title>Johan Villarreal - WDD230 - Web Development - Home Page</title>
 </head>
+
 <body>
     <header>
-        <img src="images/mypicture.png" alt="Johan Picture">
-        <h1>Johan Villarreal</h1>
+        <img src="images/mypicture.jpg" alt="Johan Villarreal Profile">
     </header>
     <nav>
         <ul>
-            <li> <a href="#">Home</a></li>
-            <li> <a href="chamber/siteplan.html">Site Plan</a></li>
-            <li> <a href="#">Chamber</a></li>
-            <li> <a href="https://www.byui.edu/">BYU-Idaho</a></li>
-            <li> <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
+            <li class="active"><a href="indexs.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
         </ul>
     </nav>
-  <main>
-    <h2>WDD 230 - Web Fronted Development</h2>
-    <section class="card">
-        <h3>Learning Activities</h3>
-        <ul>
-            <li><a href="https://byui-cse.github.io/wdd230-course/lesson01/aa-course-homepage-01.html">Lesson 01: Course Home Page.</a></li>
-            <li><a href="lesson 02/design-principles.html">Lesson 02: Design Principles.</a></li>
-            <li><a href="">Lesson 03:</a></li>
-            <li><a href="">Lesson 04:</a></li>
-            <li><a href="">Lesson 05:</a></li>
-            <li><a href="">Lesson 06:</a></li>
-            <li><a href="">Lesson 07:</a></li>  
-        </ul>
-    </section>
-  </main>
+
+    <main>
+        <h1>WDD 230: Web Fronted Development</h1>
+        <div class="parent">
+            <section class="card">
+                <h2>Learning Activities</h2>
+                <ul id="LearningActivities">
+                    <li><a href="#">learning activities</a></li>
+                    <li><a href="#">learning activities</a></li>
+                    <li><a href="#">learning activities</a></li>
+                </ul>
+
+            </section>
+            <section class="card">
+                <h2>information</h2>
+                <p id="WeatherInfo">Weather Information:</p>
+                <p id="visitInfo">Number of Visits: </p>
+            </section>
+        </div>
+        <p></p>
+    </main>
     <footer>
-        <p>
-            @2023 | Johan Villarreal | California |
-            <a class="weblink" href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
+        <p id="copyright">
+
         </p>
-        <p>
-            Last Update:
-            <span id="Last"></span>
+        <p id="lastModified">
+
         </p>
     </footer>
-        <script>
-            document.getElementById("Last").textContent=document.lastModified;
-        </script>
+    <script src="scripts/getDates.js"></script>
 </body>
-</html> 
+
+</html>
