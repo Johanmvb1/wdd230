@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function(lastModified) {
     
     var lastModified = new Date(document.lastModified);
 
