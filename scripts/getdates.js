@@ -1,9 +1,14 @@
-var year = new Date().getFullYear();
+window.onload = function() {
+    
+    var lastModified = new Date(document.lastModified);
 
-    var copyright = document.getElementById('copyright');
+    var currentTime = new Date();
 
-    copyright.innerHTML = "&copy; " + year + " Johan Villarreal, California, United States";
+    var options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+    var formattedLastModified = lastModified.toLocaleDateString('en-US', options);
+    var formattedCurrentTime = currentTime.toLocaleDateString('en-US', options);
 
-    var lastModified = document.getElementById('lastModified');
 
-    lastModified.innerHTML = "Last modified on " + document.lastModified;
+    document.getElementById('lastModified').textContent = "Last Modified: " + formattedLastModified;
+    document.getElementById('currentTime').textContent = "Current Time: " + formattedCurrentTime;
+}
